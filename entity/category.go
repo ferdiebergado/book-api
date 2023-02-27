@@ -1,6 +1,6 @@
-package repository
+package entity
 
 type Category struct {
-	id   int
-	name string
+	Entity
+	Name string
 }

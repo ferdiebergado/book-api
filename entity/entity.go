@@ -1,8 +1,8 @@
 package entity
 
 type Entity struct {
-	id    int
-	ctime string
-	mtime string
-	dtime string
+	ID    int
+	CTime string
+	MTime string
+	DTime string
 }

@@ -1,7 +1,14 @@
 package repository
 
-type Repository interface {
-	validate(e *Entity) error
-	create(e *Entity) (*Entity, error)
-	find(id int) *Entity
+import (
+	"book-api/entity"
+)
+
+type EntityManager interface {
+	Save(e *entity.Entity) (*entity.Entity, error)
+	Find(id int) *entity.Entity
+}
+
+type Repository struct {
+	db any
 }
